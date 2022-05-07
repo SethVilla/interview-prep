@@ -39,4 +39,13 @@ class Stack {
 const stack = new Stack();
 const string = 'ronix';
 string.split('').forEach((char) => stack.pushToStack(char));
-console.log(stack.getAllInStackReversed().join(''));
+
+// let result = '';
+// while(!stack.isStackEmpty()){
+//   result += stack.popFromStack()
+// }
+
+console.log(
+  stack.getAllInStackReversed().join('')
+  // result
+);
