@@ -1,7 +1,4 @@
-// optomized to use all available space
-
 class TwoStacks {
-  // Constructor
   constructor(n) {
     this.arr = Array(n).fill(0);
     this.size = n;
@@ -60,6 +57,8 @@ class TwoStacks {
     }
     return 0;
   }
+
+  // Driver program to test twoStack class
 }
 var ts = new TwoStacks(5);
 ts.push1(5);

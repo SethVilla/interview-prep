@@ -2,18 +2,17 @@ const args = process.argv;
 console.log(Number(args[2]));
 
 class twoStacks {
-  // Constructor
   constructor(n) {
     // create a static array
     this.arr = new Array(n);
     this.size = n;
+    // plus one
     this.top1 = Math.floor(n / 2) + 1;
     this.top2 = Math.floor(n / 2);
 
     console.log(this.arr, this.top1, this.top2);
   }
 
-  // Method to push an element x to stack1
   push1(x) {
     // There is at least one empty
     // space for new element
@@ -27,11 +26,10 @@ class twoStacks {
     }
   }
 
-  // Method to push an element
-  // x to stack2
   push2(x) {
     // There is at least one empty
     // space for new element
+    // - 1 because we always add a middle point
     if (this.top2 < this.size - 1) {
       this.top2++;
       this.arr[this.top2] = x;
